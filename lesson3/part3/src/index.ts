@@ -3,24 +3,18 @@ import MessageRoutesV2 from './routes/messages/v2';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import config from './config';
-import { Sequelize } from 'sequelize-typescript';
+import * as mongoose from 'mongoose';
 
 const init = async () => {
 
-  const sequelize = new Sequelize({
-    database: config.db.db,
-    dialect: 'postgres',
-    username: config.db.user,
-    password: config.db.password,
-    port: config.db.port,
-    host: config.db.host,
-    models: [__dirname + '/models']
+  await mongoose.connect(config.db.uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   });
 
   const app = express();
   app.use(bodyParser.json());
 
-  await sequelize.sync({ force: true });
   const messageRouterV1 = MessageRoutesV1();
   const messageRouterV2 = MessageRoutesV2();
 

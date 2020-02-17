@@ -1,6 +1,6 @@
 import * as express from 'express';
-import getMessage from '../../handlers/messages/getMessage';
-import addMessage from '../../handlers/messages/addMessage';
+import getMessage from '../../../handlers/messages/v1/getMessage';
+import addMessage from '../../../handlers/messages/v1/addMessage';
 
 
 const init = (): express.Router => {

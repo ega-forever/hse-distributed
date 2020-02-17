@@ -1,0 +1,17 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "ESNext",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "skipLibCheck": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "resolveJsonModule": true
+   }
+}
