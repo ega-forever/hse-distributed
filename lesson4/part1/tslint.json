@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "max-line-length": false,
+    "trailing-comma": [true, {"multiline":  "never", "singleline": "never"}],
+    "import-name": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "prefer-array-literal": false,
+    "no-increment-decrement": false,
+    "max-classes-per-file": false,
+    "align": false,
+    "no-boolean-literal-compare": false,
+    "no-unused-variable": true,
+    "no-submodule-imports": false
+  }
+}
