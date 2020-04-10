@@ -65,7 +65,8 @@ const bootstrap = async () => {
       return {
         req,
         tokenCtrl,
-        authorization_token: req.headers.authorization
+        authorization_token: req.headers.authorization,
+        refresh_token: req.headers['refresh-token']
       };
     }
   });
