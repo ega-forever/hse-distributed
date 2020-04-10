@@ -1,0 +1,29 @@
+{
+  "name": "common.libs",
+  "version": "1.0.0",
+  "description": "The following repo contains a set of contracts, declared and used in different services. The formats may include GRPC proto files and graphql schemas.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && tsc && git add build"
+  },
+  "pre-commit": [
+    "build"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "apollo-server-errors": "^2.3.4",
+    "class-validator": "^0.11.0",
+    "graphql": "^14.6.0",
+    "grpc": "^1.24.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.3"
+  }
+}

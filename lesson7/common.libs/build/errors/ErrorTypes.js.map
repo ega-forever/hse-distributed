@@ -1,0 +1,1 @@
+{"version":3,"file":"ErrorTypes.js","sourceRoot":"","sources":["../../src/errors/ErrorTypes.ts"],"names":[],"mappings":";;AAAa,QAAA,UAAU,GAAI;IACzB,UAAU,EAAE,kBAAkB;IAC9B,MAAM,EAAE,cAAc;IACtB,IAAI,EAAE;QACJ,SAAS,EAAE,+BAA+B;QAC1C,YAAY,EAAE,kCAAkC;KACjD;CACF,CAAC"}

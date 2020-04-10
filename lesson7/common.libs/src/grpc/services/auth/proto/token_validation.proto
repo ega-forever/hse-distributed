@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package token_validation;
+
+service TokenValidation {
+    rpc Validate (Validation) returns (ValidationResponse) {
+    }
+}
+
+
+message Validation {
+    string token = 1;
+    string type = 2;
+}
+
+message ValidationResponse {
+    int64 accountId = 1;
+    int64 tokenId = 2;
+    string email = 3;
+    string error = 4;
+}
